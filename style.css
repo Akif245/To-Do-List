@@ -25,9 +25,10 @@
 .todo img {
           height: 50px;
 }
-.row{
+.row:hover{
           display: flex;
           align-items: center;
+          background: lightblue;
 }
 .row input{
           height: 32px;
@@ -57,6 +58,14 @@ ul li{
           user-select: none;
           cursor: pointer;
           padding: 12px 8px 12px 50px;
+          /* background-image: url(unchecked.png); */
 
 
 }
+#list img{
+          height: 20px;
+          width: 20px;
+
+}
+
+
