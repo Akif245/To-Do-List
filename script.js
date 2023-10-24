@@ -8,6 +8,9 @@ function addtask() {
                     let li = document.createElement("li")
                     li.innerHTML = box.value
                     list.appendChild(li )
+                     let span = document.createElement("span")
+                     span.innerHTML = ""
           }
+          box.value ="";
           
 }

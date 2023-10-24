@@ -13,9 +13,9 @@
           padding: 10px;
 }
 .todo{
-          width: 100%;
+          width: 40%;
           max-width: 540px;
-          background: #fff;
+          background: #ffffff;
           margin: 100px auto;
           padding: 40px 30px 70px;  
           border-radius: 20px;
@@ -23,49 +23,75 @@
           
 }
 .todo img {
-          height: 50px;
+    height: 50px;
 }
-.row:hover{
-          display: flex;
-          align-items: center;
-          background: lightblue;
-}
-.row input{
-          height: 32px;
-          border: none;
+.row{
+    display: flex;
+    align-items: center;
+          /* background: lightblue; */
+        }
+        .row input{
+            height: 32px;
+            /* border: none; */
+          
           outline: none;
           font-weight: 14px;
+          border-radius: 20px;
           background: transparent;
           padding: 10px;
-          width: 350px;
-
+          width: 300px;
+          margin: 0 20px;
+          
+        }
+        .row button {
+            height: 35px;
+            width: 80px;
+            background-color: #ff422d;
+            color: #ffffff;
+            cursor: pointer;
+            border: none;
+            border-radius: 40px;
+            outline: none;
+            
+            
+        }
+        ul li{
+            /* background-image: url(unchecked.png); */
+            list-style: none;
+            font-size: 17px;
+            user-select: none;
+            cursor: pointer;
+            padding: 12px 8px 12px 50px;
+            position: relative;
+            
+          
+          
+          
+          
+        }
+        ul li ::before{
+    content: '';
+    position: absolute;
+    height: 28px;
+    width:28px;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    background-image: url(unchecked.png);
+    top: 12px;
+    left: 8px;
+    
 }
-.row button {
-          height: 35px;
-          width: 55px;
-          background-color: #ff5945;
-          color: #fff;
-          cursor: pointer;
-          border: none;
-          border-radius: 40px;
-          outline: none;
-
-
+ul li.checked{
+    
+    color: #242424;
+    text-decoration: line-through;
 }
-ul li{
-          list-style: none;
-          font-size: 17px;
-          user-select: none;
-          cursor: pointer;
-          padding: 12px 8px 12px 50px;
-          /* background-image: url(unchecked.png); */
-
-
+ul li.checked::before{
+    background-image: url(checked.png);
 }
 #list img{
-          height: 20px;
-          width: 20px;
-
+    height: 20px;
+    padding: 0 10px;
 }
-
 
